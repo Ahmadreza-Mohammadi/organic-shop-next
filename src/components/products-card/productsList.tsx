@@ -76,7 +76,7 @@ function ProductsList() {
         onPageChange={handlePageClick}
         containerClassName={'pagination'}
         activeClassName={'active'}
-        className="flex gap-1 bg-green-600 mt-2 p-1 rounded-md"
+        className="flex gap-1 bg-green-600 mt-6 p-1 rounded-md"
       />
     </div>
   );
