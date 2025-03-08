@@ -1,25 +1,8 @@
+import { products, sortFilters } from "@/constants/const";
+import { digitsEnToFa, formatPrice } from "@/utils/helper";
 import { FaStar, FaRegStar } from "react-icons/fa";
 
 function ProductsComponent() {
-  const sortFilters = [
-    { name: "جدیدترین", id: 1 },
-    { name: "قدیمی ترین", id: 2 },
-    { name: "ارزان ترین", id: 3 },
-    { name: "گران ترین", id: 4 },
-  ];
-
-  const products = [
-    { name: "سیب", price: 95000, stars: 4, id: 1 },
-    { name: "روغن گیاهی", price: 230000, stars: 5, id: 2 },
-    { name: "عسل طبیعی", price: 650000, stars: 4, id: 3 },
-    { name: "فلفل دلمه", price: 80000, stars: 4, id: 4 },
-    { name: "ذرت", price: 75000, stars: 3, id: 5 },
-    { name: "آب هویج", price: 90000, stars: 5, id: 6 },
-  ];
-
-  const formatPrice = (price: any) =>
-    price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
   return (
     <div className="flex flex-col items-center gap-5">
       {/* search bar */}
@@ -35,10 +18,9 @@ function ProductsComponent() {
           </select>
         </div>
         <div className="flex items-center">
-          <span>موارد یافت شده: ۱۲۳</span>
+          <span>موارد یافت شده: {digitsEnToFa("123")}</span>
         </div>
       </div>
-
       {/* products */}
       <div className="w-full p-6 flex justify-center flex-wrap gap-8 bg-green-100">
         {products.map((product) => (
