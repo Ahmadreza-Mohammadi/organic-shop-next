@@ -1,4 +1,4 @@
-import { sortFilters } from "@/constants/const";
+import { sortFilters } from "@/components/constants/const";
 import { digitsEnToFa } from "@/utils/helper";
 
 function FilterBar() {
