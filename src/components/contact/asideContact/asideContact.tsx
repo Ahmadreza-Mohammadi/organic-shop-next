@@ -2,6 +2,7 @@ import email from "@/assets/images/email.png";
 import location from "@/assets/images/location.png";
 import phone from "@/assets/images/phone.png";
 import BorderGray from "@/components/shared/border/borderGray";
+import { digitsEnToFa } from "@/utils/helper";
 import Image from "next/image";
 
 export default function AsideContact() {
@@ -35,8 +36,8 @@ export default function AsideContact() {
           className="w-[39.85px] h-[39.84px] mx-auto"
         />
         <div className="text-center">
-          <p> 3350-5288 (013)</p>
-          <p>3350-6688 (013) </p>
+          <p> {digitsEnToFa("3350-5288 (013)")}</p>
+          <p>{digitsEnToFa("3350-6688 (013)")} </p>
         </div>
       </div>
     </div>
