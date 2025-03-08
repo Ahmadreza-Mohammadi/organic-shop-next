@@ -1,7 +1,9 @@
 import FilterBar from "@/components/filter-bar/filterBar";
 import ProductsList from "@/components/products-card/productsList";
+import { socialMediaArr } from "@/constants/const";
 
 function ProductsComponent() {
+
   return (
     <div className="flex flex-col items-center">
       <FilterBar />
@@ -17,14 +19,19 @@ function ProductsComponent() {
 
         <div className=" w-[600px] flex items-center justify-around">
           <div className="flex p-4 gap-2 w-72 justify-between rounded-l-2xl shadow-lg">
-            <div className="w-full "><input className="bg-gray-100 outline-none" placeholder="ایمیل خود را وارد کنید..." type="text" name="" id="" /></div>
+            <div className="w-full ">
+              <input
+                className="bg-gray-100 outline-none"
+                placeholder="ایمیل خود را وارد کنید..."
+                type="text"
+                name=""
+                id=""
+              />
+            </div>
             <div className="text-green-300 cursor-pointer">عضویت</div>
           </div>
           <div className="flex items-center gap-4">
-           <img className="h-10 cursor-pointer" src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="instagram" />
-           <img className="h-12 cursor-pointer" src="https://www.svgrepo.com/show/475700/youtube-color.svg" alt="youtube" />
-           <img className="h-10 cursor-pointer" src="https://www.svgrepo.com/show/349527/telegram.svg" alt="telegram" />
-           <img className="h-10 cursor-pointer" src="https://www.svgrepo.com/show/349563/whatsapp.svg" alt="whatsapp" />
+           {socialMediaArr.map(social=>(<img className="h-11" src={social.img} alt={social.name} key={social.name} />))}
           </div>
         </div>
       </div>
