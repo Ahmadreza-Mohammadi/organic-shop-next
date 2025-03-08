@@ -2,7 +2,7 @@ import { products } from "@/constants/const"
 import { formatPrice } from "@/utils/helper"
 import { FaRegStar, FaStar } from "react-icons/fa"
 
-function ProductsCard() {
+function ProductsList() {
   return (
     <div className="w-full p-6 flex justify-center flex-wrap gap-8 bg-green-100">
     {products.map((product) => (
@@ -54,4 +54,4 @@ function ProductsCard() {
   )
 }
 
-export default ProductsCard
+export default ProductsList
