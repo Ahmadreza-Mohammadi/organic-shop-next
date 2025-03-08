@@ -1,5 +1,7 @@
+import ProductsComponent from "@/components/products/products";
+
 function Products() {
-  return <div>Products</div>;
+  return <ProductsComponent />
 }
 
 export default Products;
