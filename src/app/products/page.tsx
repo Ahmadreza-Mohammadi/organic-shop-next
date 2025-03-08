@@ -1,5 +1,5 @@
 import FilterBar from "@/components/filter-bar/filterBar";
-import ProductsList from "@/components/products-card/productsCard";
+import ProductsList from "@/components/products-card/productsList";
 
 
 function ProductsComponent() {
