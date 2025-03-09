@@ -1,10 +1,26 @@
+import teamMember1 from "@/assets/images/teamMember1.png";
+import teamMember2 from "@/assets/images/teamMember2.png";
+import teamMember3 from "@/assets/images/teamMember3.png";
+
+export const teamMembers = [
+  { name: "مهدی رضایی", job: "مدیر ارشد محصول", image: teamMember1 },
+  { name: "لیلا اسلامی", job: "مسئول روابط عمومی", image: teamMember2 },
+  { name: "سارا محمودی", job: "کارشناس کیفیت", image: teamMember3 },
+  { name: "امیر حسین زاده", job: "مدیر اجرایی", image: teamMember1 },
+  { name: "شهرزاد صالحی", job: "مدیر مارکتینگ", image: teamMember2 },
+  { name: "حمید کاشانی", job: "توسعه‌دهنده ارگانیک", image: teamMember3 },
+  { name: "ندا فاضلی", job: "مشاور تغذیه", image: teamMember1 },
+  { name: "علی آقایی", job: "کارشناس تامین منابع", image: teamMember2 },
+  { name: "محمدرضا حسینی", job: "کارشناس خرید", image: teamMember3 },
+  { name: "مریم حیدری", job: "مدیر عملیات", image: teamMember1 },
+];
+
 export const sortFilters = [
   { name: "جدیدترین", id: 1 },
   { name: "قدیمی ترین", id: 2 },
   { name: "ارزان ترین", id: 3 },
   { name: "گران ترین", id: 4 },
 ];
-
 export const products = [
   { name: "سیب", price: 95000, stars: 4, id: 1, category: "میوه" },
   { name: "روغن گیاهی", price: 230000, stars: 5, id: 2, category: "گیاهی" },
