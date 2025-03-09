@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { products } from "@/constants/const";
+import { products } from "@/components/constants/const";
 import { formatPrice } from "@/utils/helper";
 import { useState } from "react";
 import { FaRegStar, FaStar } from "react-icons/fa";
-import ReactPaginate from 'react-paginate';
+import ReactPaginate from "react-paginate";
 
 function ProductsList() {
   const [currentPage, setCurrentPage] = useState(0);
@@ -14,7 +14,7 @@ function ProductsList() {
   const currentProducts = products.slice(offset, offset + productsPerPage);
   const pageCount = Math.ceil(products.length / productsPerPage);
 
-  const handlePageClick = ({ selected }:any) => {
+  const handlePageClick = ({ selected }: any) => {
     setCurrentPage(selected);
   };
 
@@ -36,7 +36,9 @@ function ProductsList() {
               </div>
               <div className="flex justify-between items-center">
                 <div className="flex flex-col gap-4">
-                  <span className="text-green-500 text-2xl">{product.name}</span>
+                  <span className="text-green-500 text-2xl">
+                    {product.name}
+                  </span>
                   <span className="font-bold">
                     {formatPrice(product.price)} تومان
                   </span>
@@ -66,17 +68,17 @@ function ProductsList() {
         ))}
       </div>
       <ReactPaginate
-        previousLabel={'صفحه قبل'}
-        nextLabel={'صفحه بعد'}
-        breakLabel={'...'}
-        breakClassName={'break-me'}
+        previousLabel={"صفحه قبل"}
+        nextLabel={"صفحه بعد"}
+        breakLabel={"تا"}
+        breakClassName={"break-me"}
         pageCount={pageCount}
         marginPagesDisplayed={1}
         pageRangeDisplayed={3}
         onPageChange={handlePageClick}
-        containerClassName={'pagination'}
-        activeClassName={'active'}
-        className="flex gap-1 bg-green-600 mt-6 p-1 rounded-md"
+        containerClassName={"pagination"}
+        activeClassName={"active"}
+        className="flex gap-1 bg-green-600 mt-6 p-1 rounded-md font-bold text-white"
       />
     </div>
   );

@@ -1,4 +1,3 @@
-import ProductsComponent from "@/components/products/products";
 import "./globals.css";
 
 export default function RootLayout({
