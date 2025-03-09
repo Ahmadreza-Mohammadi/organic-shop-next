@@ -39,12 +39,21 @@ function Navbar() {
           />
         </div>
       </div>
-      <div className="bg-green-500 flex justify-around  text-xl font-bold text-white">
-        {navPages.map((page) => (
-          <span className="cursor-pointer hover:bg-green-800 p-2" key={page.id}>
-            {page.name}
-          </span>
-        ))}
+      <div className="bg-green-500 flex justify-between">
+        <div className=" flex justify-around  text-xl font-semibold text-white">
+          {navPages.map((page) => (
+            <span
+              className="cursor-pointer hover:bg-green-800 p-2"
+              key={page.id}
+            >
+              {page.name}
+            </span>
+          ))}
+        </div>
+        <div className="px-4 flex items-center gap-2 cursor-pointer text-white font-semibold hover:bg-green-900">
+          <span>پشتیبانی</span>
+          <img className="h-10" src="https://www.svgrepo.com/show/343881/customer-support-help-service.svg" alt="" />
+        </div>
       </div>
     </div>
   );
