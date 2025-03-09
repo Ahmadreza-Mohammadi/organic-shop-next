@@ -24,7 +24,7 @@ function ProductsList() {
         {currentProducts.map((product) => (
           <div
             key={product.id}
-            className="w-1/4 border-2 border-green-300 bg-white h-[540px] p-4 flex shadow-2xl rounded-md transition-transform transform hover:scale-105"
+            className="w-1/4 border-2 border-green-300 bg-white h-[540px] p-4 flex shadow-2xl cursor-pointer rounded-md transition-transform transform hover:scale-105"
           >
             <div className="w-full p-4 flex flex-col justify-between shadow-md">
               <div className="h-full flex justify-center items-center">
