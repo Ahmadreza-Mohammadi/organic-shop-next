@@ -5,6 +5,25 @@ export const sortFilters = [
   { name: "گران ترین", id: 4 },
 ];
 
+export const socialMediaArr = [
+  {
+    name: "instagram",
+    img: "https://www.svgrepo.com/show/452229/instagram-1.svg",
+  },
+  {
+    name: "telegram",
+    img: "https://www.svgrepo.com/show/349527/telegram.svg",
+  },
+  {
+    name: "whatsapp",
+    img: "https://www.svgrepo.com/show/349563/whatsapp.svg",
+  },
+  {
+    name: "youtube",
+    img: "https://www.svgrepo.com/show/349577/youtube.svg",
+  }
+];
+
 export const products = [
   { name: "سیب", price: 95000, stars: 4, id: 1, category: "میوه" },
   { name: "روغن گیاهی", price: 230000, stars: 5, id: 2, category: "گیاهی" },

@@ -62,7 +62,7 @@ export default function AboutCo() {
               <div className="flex gap-4 items-center">
                 <Image src={leaficone} alt="about" width={60} height={200} />
                 <div>
-                  <p className="font-medium text-[18px]">100% غذای ارگانیک</p>
+                  <p className="font-medium text-[18px]">۱۰۰% غذای ارگانیک</p>
                   <p className="font-normal text-[14px] text-[#808080]">
                     100% غذای سالم و تازه
                   </p>
@@ -80,7 +80,7 @@ export default function AboutCo() {
               <div className="flex gap-4 items-center">
                 <Image src={starIcone} alt="about" width={60} height={200} />
                 <div>
-                  <p className="font-medium text-[18px]">پرداخت 100% امن </p>
+                  <p className="font-medium text-[18px]">پرداخت ۱۰۰% امن </p>
                   <p className="font-normal text-[14px] text-[#808080]">
                     اطمینان پول ایمن
                   </p>
@@ -89,9 +89,9 @@ export default function AboutCo() {
               <div className="flex gap-4 items-center">
                 <Image src={boxIcone} alt="about" width={60} height={200} />
                 <div>
-                  <p className="font-medium text-[18px]">100% غذای ارگانیک</p>
+                  <p className="font-medium text-[18px]">۱۰۰% غذای ارگانیک</p>
                   <p className="font-normal text-[14px] text-[#808080]">
-                    100% غذای سالم و تازه
+                    ۱۰۰% غذای سالم و تازه
                   </p>
                 </div>
               </div>
