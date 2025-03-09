@@ -21,7 +21,7 @@ export const socialMediaArr = [
   {
     name: "youtube",
     img: "https://www.svgrepo.com/show/349577/youtube.svg",
-  }
+  },
 ];
 
 export const products = [
@@ -161,4 +161,12 @@ export const products = [
   },
   { name: "پودر سیر", price: 70000, stars: 3, id: 105, category: "گیاهی" },
   { name: "پودر پیاز", price: 60000, stars: 2, id: 106, category: "گیاهی" },
+];
+
+export const navPages = [
+  { id: 1, name: "داشبورد" },
+  { id: 2, name: "محصولات" },
+  { id: 3, name: "درباره ما" },
+  { id: 4, name: "تماس با ما" },
+  { id: 5, name: "سبدخرید" },
 ];
