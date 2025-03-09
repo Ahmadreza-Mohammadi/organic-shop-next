@@ -41,7 +41,7 @@ export default function Team() {
           <ArrowRight />
         </button>
 
-        <div className="scroll-container flex gap-6 overflow-hidden scroll-smooth w-[850px]">
+        <div className="scroll-container flex gap-6 overflow-hidden scroll-smooth w-[850px] p-5">
           {teamMembers.map((member, index) => (
             <div
               key={index}

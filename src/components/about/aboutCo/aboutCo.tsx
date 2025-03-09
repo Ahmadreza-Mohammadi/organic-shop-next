@@ -1,7 +1,7 @@
-import aboutimage1 from "@/assets/images/about1.png";
-import aboutimage2 from "@/assets/images/about2.png";
-import aboutimage3 from "@/assets/images/about3.png";
-import backgroundImage from "@/assets/images/aboutBg2.png";
+import aboutimage1 from "@/assets/images/about/about1.png";
+import aboutimage2 from "@/assets/images/about/about2.png";
+import aboutimage3 from "@/assets/images/about/about3.png";
+import backgroundImage from "@/assets/images/about/aboutBg2.png";
 import arrowIcone from "@/assets/svgs/arrow.png";
 import boxIcone from "@/assets/svgs/box.png";
 import checkIcone from "@/assets/svgs/Check.png";
@@ -16,17 +16,18 @@ import Image from "next/image";
 export default function AboutCo() {
   return (
     <div>
-      <div className="flex gap-[50px] px-[300px]  py-[80px] ">
+      <div className="flex gap-[50px] py-[80px] px-[300px] ">
         <Image
           src={aboutimage1}
           alt="about"
-          width={450}
-          height={300}
+          width={200}
+          height={200}
           className="rounded-lg"
         />
         <div className="flex flex-col gap-[32px]">
-          <h2 className="font-semibold text-[56px]">
-            فروشگاه ۱۰۰% معتبر محصولات ارگانیک
+          <h2 className="font-semibold text-[40px]">
+            فروشگاه ۱۰۰% معتبر
+            <br /> محصولات ارگانیک
           </h2>
           <p className="font-normal text-[18px] text-[#666666]">
             مرکز عرضه محصولات ارگانیک با بهترین کیفیت و خدمات. ما به شما محصولات
@@ -40,8 +41,9 @@ export default function AboutCo() {
       <div>
         <div className="flex pr-[300px] ">
           <div className="flex flex-col gap-[32px]">
-            <h2 className="font-semibold text-[56px]">
-              فروشگاه ۱۰۰% معتبر محصولات ارگانیک
+            <h2 className="font-semibold text-[40px]">
+              فروشگاه ۱۰۰% معتبر
+              <br /> محصولات ارگانیک
             </h2>
             <p className="font-normal text-[18px] text-[#666666]">
               ما به شما محصولات ارگانیک با بهترین کیفیت و خدمات عرضه می‌کنیم که
@@ -139,30 +141,48 @@ export default function AboutCo() {
           className="rounded-lg"
         />
         <div className="flex flex-col gap-[32px]">
-          <h2 className="font-semibold text-[56px]">
-            ما تحویل می‌دهیم، شما لذت می‌برید!
+          <h2 className="font-semibold text-[40px]">
+            ما تحویل می‌دهیم،
+            <br /> شما لذت می‌برید!
           </h2>
           <p className="font-normal text-[18px] text-[#666666]">
             اتصال راحت به شما این امکان را می‌دهد که تجربه خریدی بی‌دغدغه داشته
             باشید. تمامی مراحل جای‌گذاری محصولات با دقت انجام می‌شود و فرآیند
-            تحویل به‌صورت ساده و سریع پیش می‌رود. شما می‌توانید با اطمینان کامل
-            سفارش خود را دریافت کرده و از آن لذت ببرید.
+            تحویل به‌صورت ساده و سریع پیش می رود.
           </p>
           <div className="flex flex-col gap-4">
             <div className="flex gap-2">
-              <Image src={checkIcone} alt="about" width={20} height={20} />
+              <Image
+                src={checkIcone}
+                alt="about"
+                width={20}
+                height={20}
+                className="object-contain"
+              />
               <p className="font-normal text-[14px] text-[#666666]">
                 در دل سختی‌ها پیش می‌رویم.
               </p>
             </div>
             <div className="flex gap-2">
-              <Image src={checkIcone} alt="about" width={20} height={20} />
+              <Image
+                src={checkIcone}
+                alt="about"
+                width={20}
+                height={20}
+                className="object-contain"
+              />
               <p className="font-normal text-[14px] text-[#666666]">
                 به سمت آینده پیش می‌رویم، با زمان و نیازهای شما همگام می‌شویم.
               </p>
             </div>
             <div className="flex gap-2">
-              <Image src={checkIcone} alt="about" width={20} height={20} />
+              <Image
+                src={checkIcone}
+                alt="about"
+                width={20}
+                height={20}
+                className="object-contain"
+              />
               <p className="font-normal text-[14px] text-[#666666]">
                 ما در تلاشیم تا بهترین و نوآورانه‌ترین راه‌حل‌ها را برای شما
                 ارائه دهیم.
