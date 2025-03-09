@@ -14,7 +14,9 @@ export const teamMembers = [
   { name: "محمدرضا حسینی", job: "کارشناس خرید", image: teamMember3 },
   { name: "مریم حیدری", job: "مدیر عملیات", image: teamMember1 },
 ];
-
+  
+      ÷
+      
 export const sortFilters = [
   { name: "جدیدترین", id: 1 },
   { name: "قدیمی ترین", id: 2 },
