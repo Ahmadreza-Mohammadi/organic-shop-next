@@ -7,18 +7,24 @@ import React from "react";
 import Products from "@/components/home/products";
 import Bannar2 from "@/components/home/bannar2";
 import Bannar3 from "@/components/home/bannar3";
+import FeaturedProducts from "@/components/home/FeaturedProducts";
+import LatestNews from "@/components/home/latestNews";
+import Insetageram from "@/components/home/insetageram";
 
 function Home() {
   return (
     <>
-         <Navbar />
+      <Navbar />
       <Banner />
       <Feature />
-      <Categories/>
-      <Products/>
-      <Bannar2/>
-      <Bannar3/>
-           <Footer />
+      <Categories />
+      <Products />
+      <Bannar2 />
+      <FeaturedProducts />
+      <Bannar3 />
+      <LatestNews />
+      <Insetageram/>
+      <Footer />
     </>
   );
 }
