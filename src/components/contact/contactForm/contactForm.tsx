@@ -1,3 +1,5 @@
+import GreenInput from "@/components/shared/inputs/greenInput";
+
 export default function ContactForm() {
   return (
     <div className="shadow-xl rounded-lg w-[984px] h-[507px] p-[50px]">
@@ -11,22 +13,13 @@ export default function ContactForm() {
 
       <div className="flex flex-col gap-4 my-5">
         <div className="flex gap-5">
-          <input
-            type="email"
-            placeholder="ایمیل "
-            className="h-[49px] rounded-[6px] border border-gray-300 focus:border-green-500 focus:outline-none pr-3"
-          />
-          <input
-            type=""
-            placeholder="موضوع"
-            className="h-[49px] rounded-[6px] border border-gray-300 focus:border-green-500 focus:outline-none pr-3"
-          />
+          <GreenInput type="email" placeholder="ایمیل" />
+          <GreenInput type="text" placeholder="موضوع" />
         </div>
-
-        <input
+        <GreenInput
           type="text"
           placeholder="نظرات خود را بنویسید"
-          className="h-[100px] rounded-[6px] border border-gray-300 focus:border-green-500 focus:outline-none pr-3"
+          height="150px"
         />
       </div>
       <button className="w-[199px] h-[51px] rounded-[43px] bg-[#00B207] text-white font-semibold text-base">

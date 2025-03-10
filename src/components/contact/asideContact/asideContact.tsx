@@ -1,6 +1,6 @@
-import email from "@/assets/images/email.png";
-import location from "@/assets/images/location.png";
-import phone from "@/assets/images/phone.png";
+import email from "@/assets/svgs/email.png";
+import location from "@/assets/svgs/location.png";
+import phone from "@/assets/svgs/phone.png";
 import BorderGray from "@/components/shared/border/borderGray";
 import { digitsEnToFa } from "@/utils/helper";
 import Image from "next/image";
