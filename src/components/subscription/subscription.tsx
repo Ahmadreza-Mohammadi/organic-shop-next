@@ -27,7 +27,7 @@ function Subscription() {
         <div className="flex items-center gap-4">
           {socialMediaArr.map((social) => (
             <img
-              className="h-11"
+              className="h-11 cursor-pointer hover:shadow-xl"
               src={social.img}
               alt={social.name}
               key={social.name}

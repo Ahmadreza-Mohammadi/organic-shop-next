@@ -1,6 +1,11 @@
+import LogIn from "@/components/logIn/logIn";
+
 function Login() {
-    return <div>Login</div>;
-  }
-  
-  export default Login;
-  
+  return (
+    <div>
+      <LogIn />
+    </div>
+  );
+}
+
+export default Login;
