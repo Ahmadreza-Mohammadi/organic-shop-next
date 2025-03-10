@@ -26,7 +26,7 @@ export default function LatestNews() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quo?
             </h3>
             <div className="flex flex-col mt-3">
-              <button className="flex flex-row-reverse items-center text-[#00B207] gap-2">
+              <button className="flex flex-row-reverse items-center text-[#00B207] gap-2 hover:scale-105 hover:font-bold transition-all duration-400 ease-in-out">
                 ادامه مطلب
                 <Image src={arrow} alt="bannargreen" width={10} height={10} />
               </button>
@@ -48,7 +48,7 @@ export default function LatestNews() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quo?
             </h3>
             <div className="flex flex-col mt-3">
-              <button className="flex flex-row-reverse items-center text-[#00B207] gap-2">
+              <button className="flex flex-row-reverse items-center text-[#00B207] gap-2 hover:scale-105 hover:font-bold transition-all duration-400 ease-in-out">
                 ادامه مطلب
                 <Image src={arrow} alt="bannargreen" width={10} height={10} />
               </button>
@@ -70,7 +70,7 @@ export default function LatestNews() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quo?
             </h3>
             <div className="flex flex-col mt-3">
-              <button className="flex flex-row-reverse items-center text-[#00B207] gap-2">
+              <button className="flex flex-row-reverse items-center text-[#00B207] gap-2 hover:scale-105 hover:font-bold transition-all duration-400 ease-in-out">
                 ادامه مطلب
                 <Image src={arrow} alt="bannargreen" width={10} height={10} />
               </button>
