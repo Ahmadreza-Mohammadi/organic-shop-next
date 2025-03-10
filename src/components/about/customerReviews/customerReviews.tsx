@@ -57,10 +57,10 @@ export default function CustomerReviews() {
                   src={review.image}
                   alt={review.name}
                   width={80}
-                  height={80}
                   style={{
                     objectFit: "cover",
                     borderRadius: "50%",
+                    height:"68px"
                   }}
                 />
 

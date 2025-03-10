@@ -1,10 +1,12 @@
+import Footer from "@/components/footer/footer";
 import LogIn from "@/components/logIn/logIn";
 
 function Login() {
   return (
-    <div>
+    <>
       <LogIn />
-    </div>
+      <Footer />
+    </>
   );
 }
 

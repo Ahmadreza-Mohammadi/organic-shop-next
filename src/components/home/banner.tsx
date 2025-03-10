@@ -6,7 +6,7 @@ import Bannargreen from "@/assets/images/baner/Bannargreen.png";
 
 export default function Banner() {
   return (
-    <div>
+    <div className="mt-14">
       <div className="flex flex-row justify-around">
         <div className="flex flex-col gap-5">
           <div className="relative w-[423px] h-[288px]">
