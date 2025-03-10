@@ -42,6 +42,7 @@ export default function FeaturedProducts() {
                 transition-all duration-300 ease-in-out"
         >
           <Image src={product_3} alt="bannargreen" width={200} height={213} />
+          
           <h3 className="text-center">بادمجان </h3>
           <Image src={Rating} alt="bannargreen" width={80} height={80} />
 
