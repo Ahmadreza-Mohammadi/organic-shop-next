@@ -9,12 +9,12 @@ import Products from "@/components/home/products";
 function Home() {
   return (
     <>
-         <Navbar />
+      <Navbar />
       <Banner />
       <Feature />
-      <Categories/>
-      <Products/>
-           <Footer />
+      <Categories />
+      <Products />
+      <Footer />
     </>
   );
 }
