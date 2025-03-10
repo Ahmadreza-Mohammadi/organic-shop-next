@@ -16,7 +16,7 @@ function Footer() {
         </div>
         <div className="w-full md:w-1/5 flex flex-col gap-20 mb-5">
           <h2 className="font-bold text-xl">لینک‌های مفید</h2>
-          <ul>
+          <ul className="flex flex-col gap-3">
             <li><a href="#" className="text-lg hover:text-green-500">درباره ما</a></li>
             <li><a href="#" className="text-lg hover:text-green-500">تماس با ما</a></li>
             <li><a href="#" className="text-lg hover:text-green-500">حریم خصوصی</a></li>
@@ -25,7 +25,7 @@ function Footer() {
         </div>
         <div className="w-full md:w-1/5 flex flex-col gap-20 mb-5">
           <h2 className="font-bold text-xl">دسته‌بندی‌ها</h2>
-          <ul>
+          <ul className="flex flex-col gap-3">
             <li><a href="#" className="text-lg hover:text-green-500">محصولات تازه</a></li>
             <li><a href="#" className="text-lg hover:text-green-500">محصولات خشک</a></li>
             <li><a href="#" className="text-lg hover:text-green-500">مواد پروتئینی</a></li>
@@ -42,7 +42,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="bg-[#1A1A1A] text-white text-center py-3 font-bold ">
+      <div className="bg-[#1A1A1A] w-full text-white text-center py-3 font-bold ">
         <p className="text-lg">© ۱۴۰۳ ارگانیک شاپ. تمام حقوق محفوظ است.</p>
       </div>
     </>

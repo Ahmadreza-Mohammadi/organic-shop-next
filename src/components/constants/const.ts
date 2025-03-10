@@ -164,9 +164,9 @@ export const products = [
 ];
 
 export const navPages = [
-  { id: 1, name: "داشبورد" },
-  { id: 2, name: "محصولات" },
-  { id: 3, name: "درباره ما" },
-  { id: 4, name: "تماس با ما" },
-  { id: 5, name: "سبدخرید" },
+  { id: 1, name: "داشبورد", path: "/home", logo: "" },
+  { id: 2, name: "محصولات", path: "/products", logo: "" },
+  { id: 3, name: "درباره ما", path: "/about", logo: "" },
+  { id: 4, name: "تماس با ما", path: "/contact", logo: "" },
+  { id: 5, name: "سبدخرید", path: "", logo: "" },
 ];

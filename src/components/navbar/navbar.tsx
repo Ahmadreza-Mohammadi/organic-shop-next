@@ -1,7 +1,16 @@
+"use client"
+
 import React from "react";
 import { navPages } from "../constants/const";
+import { useRouter } from "next/navigation";
 
 function Navbar() {
+  const router = useRouter(); 
+
+  const handleNavigation = (path:string) => {
+    router.push(path);
+  };
+
   return (
     <div className="w-full flex flex-col">
       <div className="flex justify-between items-center w-full p-12 shadow bg-white border-2 ">
@@ -11,13 +20,13 @@ function Navbar() {
             src="https://www.svgrepo.com/show/318264/food-fruit-vegetable-vegetarian-organic-coconut-young.svg"
             alt=""
           />
-          <span className="font-bold text-3xl text-green-500">ارگانیک شاپ</span>
+          <span className="font-bold text-3xl text-green-500" onClick={() => handleNavigation('/home')}>ارگانیک شاپ</span>
         </div>
         <div className="border border-1 flex rounded-l-xl rounded-r-md shadow-lg">
           <div className="bg-white p-2">
             <input
-              className="outline-none"
-              placeholder="جستجو"
+              className="outline-none w-[480px]"
+              placeholder="جستجوی محصولات"
               type="text"
               name=""
               id=""
@@ -36,6 +45,7 @@ function Navbar() {
             className="h-16 cursor-pointer"
             src="https://www.svgrepo.com/show/313120/cart.svg"
             alt=""
+            onClick={() => handleNavigation('/cart')}
           />
         </div>
       </div>
@@ -45,14 +55,19 @@ function Navbar() {
             <span
               className="cursor-pointer hover:bg-green-800 p-2"
               key={page.id}
+              onClick={() => handleNavigation(page.path)} 
             >
               {page.name}
             </span>
           ))}
         </div>
-        <div className="px-4 flex items-center gap-2 cursor-pointer text-white font-semibold hover:bg-green-900">
+        <div className="px-4 flex items-center gap-2 cursor-pointer text-white font-semibold hover:bg-green-900" onClick={() => handleNavigation('/support')}>
           <span>پشتیبانی</span>
-          <img className="h-10" src="https://www.svgrepo.com/show/343881/customer-support-help-service.svg" alt="" />
+          <img
+            className="h-10"
+            src="https://www.svgrepo.com/show/343881/customer-support-help-service.svg"
+            alt=""
+          />
         </div>
       </div>
     </div>
