@@ -10,7 +10,7 @@ const TopSingle: React.FC = () => {
       setQuantity(quantity - 1);
     }
   };
-
+ 
   const handleIncrease = () => {
     setQuantity(quantity + 1);
   };
