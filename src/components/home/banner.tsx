@@ -39,8 +39,8 @@ export default function Banner() {
           </div>
         </div>
         <div className="relative">
-          <p className="absolute left-12 top-1/4 mb-5 flex items-center justify-center text-white text-4xl font-bold  rounded-lg">
-            غذای ارگانیک تازه و سالم
+          <p className="absolute left-12 top-1/4 mb-5 flex items-center justify-center text-white text-5xl font-bold  rounded-lg  flex-col">
+            غذای ارگانیک<span> تازه و سالم</span>
           </p>
           <p className="absolute left-12 top-2/4  flex flex-col  gap-3 items-center justify-center text-white text-xl font-bold ">
             فروش تا{" "}

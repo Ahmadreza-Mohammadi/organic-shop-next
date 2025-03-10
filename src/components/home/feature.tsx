@@ -18,7 +18,7 @@ height={40}
 />
 <div className='flex flex-col'>
     <h3 className='text-xl'>ارسال رایگان</h3>
-    <p className='text-[12px] '>ارسال رایگان برای تمام سفارشات شما</p>
+    <p className='text-[12px] text-gray-500 '>ارسال رایگان برای تمام سفارشات </p>
 </div>
 </div>
 <div className='flex flex-row gap-2'>
@@ -30,7 +30,7 @@ height={40}
 />
 <div className='flex flex-col'>
     <h3 className='text-xl'>پشتیبانی مشتری</h3>
-    <p className='text-[12px] '> دسترسی فوری به پشتیبانی</p>
+    <p className='text-[12px] text-gray-500 '> دسترسی فوری به پشتیبانی</p>
 </div>
 </div>
 <div className='flex flex-row gap-2'>
@@ -42,7 +42,7 @@ height={40}
 />
 <div className='flex flex-col'>
     <h3 className='text-xl'>پرداخت 100% ایمن </h3>
-    <p className='text-[12px] '>  ما اطمینان حاصل می کنیم که پول شما پس انداز می شود</p>
+    <p className='text-[12px] text-gray-500 '> پول شما پس انداز می شود</p>
 </div>
 </div>
 <div className='flex flex-row gap-2'>
@@ -54,7 +54,7 @@ height={40}
 />
 <div className='flex flex-col'>
     <h3 className='text-xl'>ضمانت بازگشت وجه</h3>
-    <p className='text-[12px] '> 30 روز ضمانت بازگشت وجه</p>
+    <p className='text-[12px] text-gray-500'> 30 روز ضمانت بازگشت وجه</p>
 </div>
 </div>
     </div>

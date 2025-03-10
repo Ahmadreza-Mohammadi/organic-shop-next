@@ -1,4 +1,5 @@
 import Banner from "@/components/home/banner";
+import Categories from "@/components/home/categories";
 import Feature from "@/components/home/feature";
 import Footer from "@/components/footer/footer";
 import Navbar from "@/components/navbar/navbar";
