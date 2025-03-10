@@ -1,3 +1,94 @@
+import teamMember1 from "@/assets/images/teamMember/teamMember1.png";
+import teamMember2 from "@/assets/images/teamMember/teamMember2.png";
+import teamMember3 from "@/assets/images/teamMember/teamMember3.png";
+import user1 from "@/assets/images/users/user1.jpg";
+import user2 from "@/assets/images/users/user2.jpg";
+import user3 from "@/assets/images/users/user3.jpg";
+import user4 from "@/assets/images/users/user4.jpg";
+import user5 from "@/assets/images/users/user5.jpg";
+import user6 from "@/assets/images/users/user6.jpg";
+import user7 from "@/assets/images/users/user7.jpg";
+import user8 from "@/assets/images/users/user8.jpg";
+import user9 from "@/assets/images/users/user9.jpg";
+
+export const userReviews = [
+  {
+    name: "علی بهرامی",
+    role: "customer",
+    image: user1,
+    review:
+      "محصولات خیلی باکیفیتی دارید! من از خرید روغن زیتون خیلی راضی بودم.",
+  },
+  {
+    name: "مریم رضایی",
+    role: "customer",
+    image: user2,
+    review:
+      "بسته‌بندی خیلی خوب بود و کاملاً طبیعی و تازه. حتماً دوباره خرید می‌کنم.",
+  },
+  {
+    name: "سعید محمدی",
+    role: "customer",
+    image: user3,
+    review: "عسل ارگانیک شما فوق‌العاده بود! طعمش کاملاً طبیعی و خوشمزه بود.",
+  },
+  {
+    name: "زهرا احمدی",
+    role: "customer",
+    image: user4,
+    review: "چای گیاهی‌ای که خریدم خیلی عطر خوبی داره. عالی بود!",
+  },
+  {
+    name: "رضا نوری",
+    role: "customer",
+    image: user5,
+    review: "قیمت‌ها خیلی مناسبه و کیفیت محصولات هم بالاست. پیشنهاد می‌کنم!",
+  },
+  {
+    name: "نسترن کریمی",
+    role: "customer",
+    image: user6,
+    review: "تحویل سریع بود و محصولات کاملاً تازه و ارگانیک. تجربه عالی بود.",
+  },
+  {
+    name: "امیر حسینی",
+    role: "customer",
+    image: user7,
+    review: "خیلی دوست داشتم که روی بسته‌بندی‌ها اطلاعات کامل نوشته شده بود.",
+  },
+  {
+    name: "الهام نظری",
+    role: "customer",
+    image: user8,
+    review: "محصولات شما حس خوبی داره، مخصوصاً روغن نارگیل که امتحان کردم.",
+  },
+  {
+    name: "محمد صادقی",
+    role: "customer",
+    image: user9,
+    review: "همه چیز عالی بود، فقط اگر تنوع محصولات بیشتر بشه خیلی بهتره.",
+  },
+  {
+    name: "سحر تیموری",
+    role: "customer",
+    image: user1,
+    review: "خیلی ممنون از محصولات باکیفیتتون! حتماً دوباره خرید می‌کنم.",
+  },
+];
+
+export const teamMembers = [
+  { name: "مهدی رضایی", job: "مدیر ارشد محصول", image: teamMember1 },
+  { name: "لیلا اسلامی", job: "مسئول روابط عمومی", image: teamMember2 },
+  { name: "سارا محمودی", job: "کارشناس کیفیت", image: teamMember3 },
+  { name: "امیر حسین زاده", job: "مدیر اجرایی", image: teamMember1 },
+  { name: "شهرزاد صالحی", job: "مدیر مارکتینگ", image: teamMember2 },
+  { name: "حمید کاشانی", job: "توسعه‌دهنده ارگانیک", image: teamMember3 },
+  { name: "ندا فاضلی", job: "مشاور تغذیه", image: teamMember1 },
+  { name: "علی آقایی", job: "کارشناس تامین منابع", image: teamMember2 },
+  { name: "محمدرضا حسینی", job: "کارشناس خرید", image: teamMember3 },
+  { name: "مریم حیدری", job: "مدیر عملیات", image: teamMember1 },
+];
+
 export const sortFilters = [
   { name: "جدیدترین", id: 1 },
   { name: "قدیمی ترین", id: 2 },

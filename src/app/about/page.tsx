@@ -1,14 +1,15 @@
 import AboutCo from "@/components/about/aboutCo/aboutCo";
-import Footer from "@/components/footer/footer";
-import Navbar from "@/components/navbar/navbar";
+import CustomerReviews from "@/components/about/customerReviews/customerReviews";
+import Team from "@/components/about/team/team";
 
 function about() {
   return (
     <>
       <Navbar />
       <AboutCo />
-      <Footer />
-    </>
+      <Team />
+      <CustomerReviews />
+    </div>
   );
 }
 
