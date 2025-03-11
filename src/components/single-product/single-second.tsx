@@ -2,31 +2,31 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 const MidleSingle = () => {
-    const [activeTab, setActiveTab] = useState("Descriptions");
+    const [activeTab, setActiveTab] = useState("توضیحات");
 
     const renderContent = () => {
         switch (activeTab) {
-            case "Descriptions":
+            case "توضیحات":
                 return (
                     <ul className="list-disc list-inside text-gray-700 mb-4 text-center">
-                        <li>100 g of fresh leaves provides.</li>
-                        <li>Aliquam ac est at augue volutpat elementum.</li>
-                        <li>Quisque nec enim eget sapien molestie.</li>
-                        <li>Proin convallis odio volutpat finibus posuere.</li>
+                        <li>۱۰۰ گرم از برگ‌های تازه ارائه می‌دهد.</li>
+                        <li>علی‌القام اَک اِست ات آگوئه ولپوت المنتوم.</li>
+                        <li>کوئسکه نک اینم اِگت ساپیئن مولِستیه.</li>
+                        <li>پرُین کنوالییس اودیو ولپوت فینیبوس پوسوئر.</li>
                     </ul>
                 );
-            case "Additional Information":
+            case "اطلاعات اضافی":
                 return (
                     <div className="text-center text-gray-700">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi unde enim dolores impedit ea sequi iure illum temporibus harum! Expedita esse iusto error nemo suscipit omnis, totam dignissimos cum maxime?
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ. کمودی اند انیم دلورس ایمپدیت اِا سکویی جوری اِلوم تمپوس هاروم! اکسپدیتا اِسه یوستو اِرور نمو سوسِپیت اُمنی‌س، توتام دیگنی‌سیُموس کم ماکسیم؟
                         </p>
                     </div>
                 );
-            case "Customer Feedback":
+            case "بازخورد مشتری":
                 return (
                     <div className="text-center text-gray-700">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maxime quae quia harum consequuntur unde, atque fugit mollitia hic nulla, vitae modi. Accusamus ipsum odit perferendis dolor vel natus est?</p>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ. دیستینکتیو ماکسیم کوئه کویا هاروم کنسکوئِنتور انده، اَتوک فوگیت مولیتیا هیک نولا، ویتای مودیاکوس. آکوساموس ایپسوم اُدیت پرفریندیس دلور ول ناتوس اِست؟</p>
                     </div>
                 );
             default:
@@ -40,33 +40,33 @@ const MidleSingle = () => {
                 <nav className="flex justify-around">
                     <a
                         href="#"
-                        className={`${activeTab === "Descriptions"
+                        className={`${activeTab === "توضیحات"
                                 ? "text-green-500 border-b-2 border-green-500"
                                 : "text-gray-500"
                             }`}
-                        onClick={() => setActiveTab("Descriptions")}
+                        onClick={() => setActiveTab("توضیحات")}
                     >
-                        Descriptions
+                        توضیحات
                     </a>
                     <a
                         href="#"
-                        className={`${activeTab === "Additional Information"
+                        className={`${activeTab === "اطلاعات اضافی"
                                 ? "text-green-500 border-b-2 border-green-500"
                                 : "text-gray-500"
                             }`}
-                        onClick={() => setActiveTab("Additional Information")}
+                        onClick={() => setActiveTab("اطلاعات اضافی")}
                     >
-                        Additional Information
+                        اطلاعات اضافی
                     </a>
                     <a
                         href="#"
-                        className={`${activeTab === "Customer Feedback"
+                        className={`${activeTab === "بازخورد مشتری"
                                 ? "text-green-500 border-b-2 border-green-500"
                                 : "text-gray-500"
                             }`}
-                        onClick={() => setActiveTab("Customer Feedback")}
+                        onClick={() => setActiveTab("بازخورد مشتری")}
                     >
-                        Customer Feedback
+                        بازخورد مشتری
                     </a>
                 </nav>
             </div>
@@ -76,12 +76,12 @@ const MidleSingle = () => {
                     {renderContent()}
                     <div className="mt-10 flex justify-around">
                         <div className="text-center mb-4">
-                            <p className="text-green-500 text-2xl">64% Discount</p>
-                            <p className="text-gray-700">Save your 64% money with us</p>
+                            <p className="text-green-500 text-2xl">٪۶۴ تخفیف</p>
+                            <p className="text-gray-700">٪۶۴ از هزینه‌های خود را با ما ذخیره کنید</p>
                         </div>
                         <div className="text-center">
-                            <p className="text-green-500 text-2xl">100% Organic</p>
-                            <p className="text-gray-700">100% Organic Vegetables</p>
+                            <p className="text-green-500 text-2xl">۱۰۰٪ ارگانیک</p>
+                            <p className="text-gray-700">سبزیجات کاملاً ارگانیک</p>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ const MidleSingle = () => {
                     <div className="w-80 h-80 overflow-hidden border rounded-lg shadow-md">
                         <Image
                             src="https://tse2.mm.bing.net/th?id=OIP.qAVdXoirudGPl_lbhwSp1gHaE8&pid=Api&P=0&h=220"
-                            alt="Sample Image"
+                            alt="نمونه تصویر"
                             width={320}
                             height={240}
                             layout="responsive"

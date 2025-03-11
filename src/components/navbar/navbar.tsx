@@ -57,7 +57,7 @@ function Navbar() {
       <div className="navbar p-8 flex justify-between">
         <div className=" flex justify-around  text-xl font-semibold text-white gap-2">
           {navPages.map((page) => (
-            <div className="cursor-pointer hover:text-green-200 p-2 flex items-center gap-1">
+            <div key={page.id} className="cursor-pointer hover:text-green-200 p-2 flex items-center gap-1">
               <img className="h-6" src={page.logo} alt="" />
               <span
                 
