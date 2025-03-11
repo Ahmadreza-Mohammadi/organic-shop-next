@@ -23,22 +23,22 @@ const TopSingle: React.FC = () => {
             <div className="flex-1 flex items-center">
               <img
                 src="https://tse3.mm.bing.net/th?id=OIP.upLW9cxb5VFYly2Nj8P5tAHaE7&pid=Api&P=0&h=220"
-                alt="Chinese Cabbage"
+                alt="کلم چینی"
                 className="w-full h-full object-cover rounded-lg" />
             </div>
             <div className="flex-1 flex flex-col justify-center">
               <div className="border-b border-gray-300 pb-4">
                 <h1 className="text-gray-800 font-bold" style={{ fontSize: "40px" }}>
-                  spring onion
+                  پیازچه
                 </h1>
                 <div className="text-2xl font-bold" style={{ color: "#00B207" }}>
-                  $17.28 <span className="line-through text-gray-500">$48.00</span>
+                  ۱۷٫۲۸ دلار <span className="line-through text-gray-500">۴۸٫۰۰ دلار</span>
                 </div>
-                <p className="text-green-600 text-base font-medium">64% OFF • In Stock</p>
+                <p className="text-green-600 text-base font-medium">٪۶۴ تخفیف • موجود در انبار</p>
               </div>
               <div className="mt-4">
                 <p className="text-gray-600 text-base">
-                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar.
+                  تاکسی کلاس اپتنت سوسیوسکو اد لیتورا تورکونت پر کونووبیا نوسترا، پر اینسپتوس هیمنائوس. نولا نیب دیام، بلاندیت ول کنسکوات نک، اولتریکس ات ایپسام. نولا واریوس مگنا آ کنسکوات پولوینار.
                 </p>
                 <div className="flex items-center justify-between gap-4 p-4 ">
                   <div className="flex items-center gap-4 border border-black rounded-full mt-4 p-1">
@@ -55,14 +55,14 @@ const TopSingle: React.FC = () => {
                   <button
                     className="py-3 px-6 text-white font-semibold rounded-full hover:opacity-90 w-100"
                     style={{ backgroundColor: "#00B207" }}
-                  >Add to Cart</button>
+                  >افزودن به سبد خرید</button>
                 </div>
                 <div className="mt-4">
                   <p className="text-gray-600">
-                    Category: <span className="font-medium">Vegetables</span>
+                    دسته‌بندی: <span className="font-medium">سبزیجات</span>
                   </p>
                   <p className="text-gray-600">
-                    Tags: <span className="font-medium">Vegetables, Healthy, Chinese, Cabbage, Green Cabbage</span>
+                    برچسب‌ها: <span className="font-medium">سبزیجات، سالم، چینی، کلم، کلم سبز</span>
                   </p>
                 </div>
               </div>
