@@ -8,7 +8,7 @@ import Rectangle_3 from "@/assets/images/baner/Rectangle 54 (2).png";
 
 export default function Bannar2() {
   return (
-    <div className="flex flex-row gap-3 m-6 mt-10">
+    <div className="flex flex-row justify-around m-6 mt-10">
         <div className="relative">
 <Image src={Rectangle_1} alt="bannar" width={424} height={536} />
 

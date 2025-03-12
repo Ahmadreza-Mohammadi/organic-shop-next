@@ -2,7 +2,6 @@
 import { teamMembers } from "@/components/constants/const";
 import ArrowLeft from "@/components/shared/buttons/arrows/arrowLeft";
 import ArrowRight from "@/components/shared/buttons/arrows/arrowRight";
-
 import Image from "next/image";
 
 export default function Team() {

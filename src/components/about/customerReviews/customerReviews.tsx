@@ -4,7 +4,6 @@ import vector from "@/assets/svgs/Vector (1).png";
 import { userReviews } from "@/components/constants/const";
 import ArrowLeft from "@/components/shared/buttons/arrows/arrowLeft";
 import ArrowRight from "@/components/shared/buttons/arrows/arrowRight";
-// import { userReviews } from "@/constants/const";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -58,10 +57,10 @@ export default function CustomerReviews() {
                   src={review.image}
                   alt={review.name}
                   width={80}
-                  height={80}
                   style={{
                     objectFit: "cover",
                     borderRadius: "50%",
+                    height:"68px"
                   }}
                 />
 

@@ -3,8 +3,17 @@
 @tailwind utilities;
 
 @font-face {
-    font-family:"cairo" ;
-    src: url("../assets/fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf");
+  font-family: "cairo";
+  src: url("../assets/fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf");
 }
 
-*{font-family: cairo;}
+* {
+  font-family: cairo;
+}
+
+.navbar {
+    background-image: url(../assets/images/navbar-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+  }
