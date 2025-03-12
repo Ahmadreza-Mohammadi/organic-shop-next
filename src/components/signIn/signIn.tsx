@@ -4,7 +4,7 @@ export default function SignIn() {
   return (
     <div>
       <div className="w-full h-screen flex justify-center items-center">
-        <div className="w-[520px] h-[371px] shadow-lg px-[24px]">
+        <div className="w-[520px] h-[432px] shadow-lg px-[24px]">
           <h1 className="font-semibold text-[32px] text-center pt-5 pb-4">
             ثبت نام
           </h1>

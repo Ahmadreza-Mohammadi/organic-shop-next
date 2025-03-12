@@ -20,6 +20,7 @@ export default function ContactForm() {
           type="text"
           placeholder="نظرات خود را بنویسید"
           height="150px"
+          width="920px"
         />
       </div>
       <button className="w-[199px] h-[51px] rounded-[43px] bg-[#00B207] text-white font-semibold text-base">
