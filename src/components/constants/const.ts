@@ -255,9 +255,9 @@ export const products = [
 ];
 
 export const navPages = [
-  { id: 1, name: "داشبورد", path: "/home", logo: "" },
-  { id: 2, name: "محصولات", path: "/products", logo: "" },
-  { id: 3, name: "درباره ما", path: "/about", logo: "" },
-  { id: 4, name: "تماس با ما", path: "/contact", logo: "" },
-  { id: 5, name: "سبدخرید", path: "", logo: "" },
+  { id: 1, name: "داشبورد", path: "/home", logo: "https://www.svgrepo.com/show/269942/supermarkets-store.svg" },
+  { id: 2, name: "محصولات", path: "/products", logo: "https://www.svgrepo.com/show/269956/healthy-food-apple.svg" },
+  { id: 3, name: "درباره ما", path: "/about", logo: "https://www.svgrepo.com/show/181565/open-book-book.svg" },
+  { id: 4, name: "تماس با ما", path: "/contact", logo: "https://www.svgrepo.com/show/413758/call.svg" },
+  { id: 5, name: "سبدخرید", path: "", logo: "https://www.svgrepo.com/show/269975/upermarket-basket.svg" },
 ];

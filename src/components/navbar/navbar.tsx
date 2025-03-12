@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div className="w-full flex flex-col">
-      <div className="flex justify-between items-center w-full p-12 shadow bg-white border-2 ">
+      <div className=" flex justify-between items-center w-full p-12 shadow  border-2 ">
         <div className="flex items-center cursor-pointer clear-start p-1 rounded-md">
           <img
             className="h-24"
