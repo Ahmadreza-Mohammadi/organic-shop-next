@@ -116,7 +116,7 @@ export const socialMediaArr = [
 ];
 
 export const products = [
-  { name: "سیب", price: 95000, stars: 4, id: 1, category: "میوه" },
+  { name: "سیب", price: 95000, stars: 4, id: 1, category: "میوه", discount:20, stock:true, description: "", },
   { name: "روغن گیاهی", price: 230000, stars: 5, id: 2, category: "گیاهی" },
   { name: "عسل طبیعی", price: 650000, stars: 4, id: 3, category: "ارگانیک" },
   { name: "فلفل دلمه", price: 80000, stars: 4, id: 4, category: "گیاهی" },
