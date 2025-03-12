@@ -1,9 +1,10 @@
 "use client";
 import rating from "@/assets/svgs/Rating.png";
 import vector from "@/assets/svgs/Vector (1).png";
+import { userReviews } from "@/components/constants/const";
 import ArrowLeft from "@/components/shared/buttons/arrows/arrowLeft";
 import ArrowRight from "@/components/shared/buttons/arrows/arrowRight";
-import { userReviews } from "@/constants/const";
+// import { userReviews } from "@/constants/const";
 import Image from "next/image";
 import { useRef } from "react";
 
