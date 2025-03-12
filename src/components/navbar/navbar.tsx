@@ -54,28 +54,25 @@ function Navbar() {
           />
         </div>
       </div>
-      <div className="navbar p-8 flex justify-between">
-        <div className=" flex justify-around  text-xl font-semibold text-white gap-2">
+      <div className="bg-[#919090] flex justify-between">
+        <div className=" flex justify-around  text-xl font-semibold text-white">
           {navPages.map((page) => (
-            <div key={page.id} className="cursor-pointer hover:text-green-200 p-2 flex items-center gap-1">
-              <img className="h-6" src={page.logo} alt="organic shop" />
-              <span
-                
-                key={page.id}
-                onClick={() => handleNavigation(page.path)}
-              >
-                {page.name}
-              </span>
-            </div>
+            <span
+              className="cursor-pointer hover:scale-105 hover:font-bold transition-all duration-400 ease-in-out  p-4"
+              key={page.id}
+              onClick={() => handleNavigation(page.path)}
+            >
+              {page.name}
+            </span>
           ))}
         </div>
         <div
-          className="px-4 flex items-center gap-2 cursor-pointer text-white font-semibold hover:text-green-200 "
+          className="px-4 flex items-center gap-2 cursor-pointer text-white font-semibold hover:scale-105 hover:font-bold transition-all duration-300 ease-in-out"
           onClick={() => handleNavigation("/support")}
         >
           <span>پشتیبانی</span>
           <img
-            className="h-10"
+            className="h-10 animate-pulse"
             src="https://www.svgrepo.com/show/343881/customer-support-help-service.svg"
             alt=""
           />
