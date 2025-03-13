@@ -1,11 +1,13 @@
 "use client";
 
-import React from "react";
-import { navPages } from "../constants/const";
 import { useRouter } from "next/navigation";
+import { useSelector } from "react-redux";
+import { navPages } from "../constants/const";
 
 function Navbar() {
   const router = useRouter();
+  const productData = useSelector((state: any) => state.product);
+  console.log(productData);
 
   const handleNavigation = (path: string) => {
     router.push(path);
@@ -41,10 +43,11 @@ function Navbar() {
             جستجو
           </button>
         </div>
-        <div className="flex items-center gap-2 p-2 rounded-xl">
+        <div className="flex items-center gap-2 p-2 rounded-xl relative">
           <div className="flex gap-1">
-            <span>جمع کل:</span>
-            <span>۳۴۵۰۰۰ تومان</span>
+            <div className="bg-red-400 p-2 rounded-full w-8 h-8 text-white absolute top-0 translate-y-[-30%] items-center flex justify-center">
+              {productData.length}
+            </div>
           </div>
           <img
             className="h-16 cursor-pointer"
@@ -58,13 +61,12 @@ function Navbar() {
       <div className="navbar p-8 flex justify-between">
         <div className=" flex justify-around  text-xl font-semibold text-white gap-2">
           {navPages.map((page) => (
-            <div key={page.id} className="cursor-pointer hover:text-green-200 p-2 flex items-center gap-1">
+            <div
+              key={page.id}
+              className="cursor-pointer hover:text-green-200 p-2 flex items-center gap-1"
+            >
               <img className="h-6" src={page.logo} alt="organic shop" />
-              <span
-                
-                key={page.id}
-                onClick={() => handleNavigation(page.path)}
-              >
+              <span key={page.id} onClick={() => handleNavigation(page.path)}>
                 {page.name}
               </span>
             </div>
@@ -72,7 +74,6 @@ function Navbar() {
         </div>
         <div
           className="px-4 flex items-center gap-2 cursor-pointer text-white font-semibold hover:text-green-200 "
-
           onClick={() => handleNavigation("/support")}
         >
           <span>پشتیبانی</span>

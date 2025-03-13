@@ -1,17 +1,17 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import counterReducer from "./reducers/register";
+import productReducer from "./reducers/productReducer";
 
 const combinedReducers = combineReducers({
-  counter: counterReducer,
+  product: productReducer,
 });
 
 const persistedReducers = persistReducer(
   {
-    key: "test",
+    key: "organic-product",
     storage,
-    whitelist: ["counter"],
+    whitelist: ["product"],
   },
   combinedReducers
 );
