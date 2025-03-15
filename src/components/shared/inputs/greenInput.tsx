@@ -6,6 +6,7 @@ interface InputProps {
   type: string;
   placeholder: string;
   value?: string;
+  name: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   height?: string;
   width?: string;
@@ -14,6 +15,7 @@ interface InputProps {
 const GreenInput: React.FC<InputProps> = ({
   type,
   placeholder,
+  name,
   value,
   onChange,
   height = "49px",
@@ -29,6 +31,7 @@ const GreenInput: React.FC<InputProps> = ({
       <input
         type={showPassword ? "text" : type}
         placeholder={placeholder}
+        name={name}
         value={value}
         onChange={onChange}
         className="rounded-[6px] border border-gray-300 focus:border-green-500 focus:outline-none pr-10"
