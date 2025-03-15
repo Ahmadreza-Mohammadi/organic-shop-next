@@ -10,6 +10,7 @@ import Bannar3 from "@/components/home/bannar3";
 import FeaturedProducts from "@/components/home/FeaturedProducts";
 import LatestNews from "@/components/home/latestNews";
 import Insetageram from "@/components/home/insetageram";
+import CustomerReviews from "@/components/about/customerReviews/customerReviews";
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
       <FeaturedProducts />
       <Bannar3 />
       <LatestNews />
+      <CustomerReviews />
       <Insetageram/>
       <Footer />
     </>

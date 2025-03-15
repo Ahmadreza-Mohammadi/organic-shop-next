@@ -10,6 +10,7 @@ export default function SignIn() {
           </h1>
           <div className="flex flex-col gap-3">
             <GreenInput type="email" placeholder="ایمیل" />
+            <GreenInput type="email" placeholder="ایمیل" />
             <GreenInput type="password" placeholder="رمز عبور" />
             <GreenInput type="password" placeholder=" تکرار رمز عبور" />
           </div>
