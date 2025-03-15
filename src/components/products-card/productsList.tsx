@@ -2,11 +2,21 @@
 
 import { products } from "@/components/constants/const";
 import { formatPrice } from "@/utils/helper";
+import axios from "axios";
 import { useState } from "react";
 import { FaRegStar, FaStar } from "react-icons/fa";
 import ReactPaginate from "react-paginate";
 
 function ProductsList() {
+  async function addProductsToApi() {
+    axios.post(
+      "https://67c2066e61d8935867e52eab.mockapi.io/products",
+      JSON.stringify(products),
+      { headers: { "content-type": "application/json" } }
+    );
+  }
+  // addProductsToApi();
+
   const [currentPage, setCurrentPage] = useState(0);
   const productsPerPage = 9;
   const offset = currentPage * productsPerPage;
@@ -29,8 +39,8 @@ function ProductsList() {
             <div className="w-full p-4 flex flex-col justify-between shadow-md">
               <div className="h-full flex justify-center items-center">
                 <img
-                  className="h-44"
-                  src="https://www.svgrepo.com/show/484874/orange-part-2.svg"
+                  className="h-60"
+                  src={product.img || "https://www.svgrepo.com/show/484874/orange-part-2.svg"}
                   alt=""
                 />
               </div>
@@ -54,7 +64,7 @@ function ProductsList() {
                 </div>
                 <div className="h-full flex items-end">
                   <div className="border border-green-700 p-1 flex items-center gap-1 rounded-lg cursor-pointer hover:bg-green-100 transition-colors">
-                    <span className="text-xs">افزودن به</span>
+                    <span className="text-xs">افزودن به سبد</span>
                     <img
                       className="h-6"
                       src="https://www.svgrepo.com/show/313120/cart.svg"
