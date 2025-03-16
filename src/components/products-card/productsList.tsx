@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { FaRegStar, FaStar } from "react-icons/fa";
 import ReactPaginate from "react-paginate";
 import { useDispatch, useSelector } from "react-redux";
+import FilterBar from "../filter-bar/filterBar";
 
 function ProductsList() {
   const dispatch = useDispatch();
@@ -36,17 +37,11 @@ function ProductsList() {
     getProductsList();
   }, [ProductsList]);
 
-  async function filterCategoriesHandler(category) {
-    const res = await axios.get(
-      `${BASE_URL}/api/records/products/?searchKey=category&searchValue=${category}`,
-      {
-        headers: { api_key: API_KEY, Authorization: `Bearer ${ACCESS_TOKEN}` },
-      }
-    );
-    console.log(res);
-  }
+
 
   return (
+   <>
+   <FilterBar setProducts={setProducts} />
     <div className="w-full p-6 flex flex-col items-center">
       <div className="w-full flex justify-center flex-wrap gap-8">
         {currentProducts.length === 0 ? (
@@ -148,6 +143,7 @@ function ProductsList() {
         className="flex gap-1 bg-green-600 mt-6 p-1 rounded-md font-bold text-white"
       />
     </div>
+   </>
   );
 }
 
