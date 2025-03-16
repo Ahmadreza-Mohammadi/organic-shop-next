@@ -39,7 +39,7 @@ function ProductsList() {
 
   return (
     <>
-      <FilterBar setProducts={setProducts} amount = {products.length} />
+      <FilterBar setProducts={setProducts} amount={products.length} />
       <div className="w-full p-6 flex flex-col items-center">
         <div className="w-full flex justify-center flex-wrap gap-8">
           {currentProducts.length === 0 ? (

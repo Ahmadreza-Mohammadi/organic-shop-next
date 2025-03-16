@@ -5,7 +5,7 @@ import { categoriesFilters } from "@/components/constants/const";
 import { digitsEnToFa } from "@/utils/helper";
 import axios from "axios";
 
-function FilterBar({ setProducts, amount }:any) {
+function FilterBar({ setProducts, amount }: any) {
   async function filterCategoriesHandler(category: string) {
     const res = await axios.get(
       `${BASE_URL}/api/records/products/?filterKey=category&filterValue=${category}`,
@@ -41,7 +41,6 @@ function FilterBar({ setProducts, amount }:any) {
         </select>
       </div>
       <div className="flex items-center">
-        
         <span>موارد یافت شده: {digitsEnToFa(amount)}</span>
       </div>
     </div>
