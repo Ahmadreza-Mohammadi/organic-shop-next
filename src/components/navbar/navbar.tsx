@@ -7,7 +7,6 @@ import { navPages } from "../constants/const";
 function Navbar() {
   const router = useRouter();
   const productData = useSelector((state: any) => state.product);
-  console.log(productData);
 
   const handleNavigation = (path: string) => {
     router.push(path);
@@ -45,7 +44,7 @@ function Navbar() {
         </div>
         <div className="flex items-center gap-2 p-2 rounded-xl relative">
           <div className="flex gap-1">
-            <div className="bg-red-400 p-2 rounded-full w-8 h-8 text-white absolute top-0 translate-y-[-30%] items-center flex justify-center">
+            <div className="bg-red-400 p-2 rounded-full w-8 h-8 text-white absolute top-3 translate-y-[-30%] items-center flex justify-center">
               {productData.length}
             </div>
           </div>
