@@ -1,0 +1,5 @@
+export const BASE_URL = "http://api.alikooshesh.ir:3000";
+export const API_KEY =
+  "organic-shop-nextxsxfWHYOEHwZWhFwqQWcoM5LseLrGOURFDyMFjqFJEEnDW62uuL7hR0bRC4ZlUlboK1yrrcAGgDgYqywmHtdbUPXGJXWSQBBZtH26rLD83r66LL";
+export const ACCESS_TOKEN =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NzdjOGQ2OWJlYzYxZWEzMGE4ZWJhYSIsImlhdCI6MTc0MjExMjEzOSwiZXhwIjoxNzQyMjg0OTM5fQ.uOcT6LQqPfcfxkLJNUnPhGUmdcaAUlyxWjuzHPNSn0Y";

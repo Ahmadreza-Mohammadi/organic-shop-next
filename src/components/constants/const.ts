@@ -1149,7 +1149,7 @@ export const products = [
 export const navPages = [
   {
     id: 1,
-    name: "داشبورد",
+    name: "خانه",
     path: "/home",
     logo: "https://www.svgrepo.com/show/269942/supermarkets-store.svg",
   },

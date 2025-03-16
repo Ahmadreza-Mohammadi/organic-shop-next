@@ -7,7 +7,6 @@ import { navPages } from "../constants/const";
 function Navbar() {
   const router = useRouter();
   const productData = useSelector((state: any) => state.product);
-  console.log(productData);
 
   const handleNavigation = (path: string) => {
     router.push(path);
