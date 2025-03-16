@@ -4,7 +4,7 @@ import { ACCESS_TOKEN, API_KEY, BASE_URL } from "@/api/url";
 import { add, remove } from "@/redux/reducers/productReducer";
 import { formatPrice } from "@/utils/helper";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaRegStar, FaStar } from "react-icons/fa";
 import ReactPaginate from "react-paginate";
 import { useDispatch, useSelector } from "react-redux";
@@ -24,15 +24,27 @@ function ProductsList() {
     setCurrentPage(selected);
   };
 
-  async function getProductsList() {
-    const response = await axios.get(`${BASE_URL}/api/records/products`, {
-      headers: { api_key: API_KEY, Authorization: `Bearer ${ACCESS_TOKEN}` },
-    });
-    const result = await response.data;
-    const productsList = await result.records[0].products;
-    setProducts(productsList);
+  useEffect(() => {
+    async function getProductsList() {
+      const response = await axios.get(`${BASE_URL}/api/records/products`, {
+        headers: { api_key: API_KEY, Authorization: `Bearer ${ACCESS_TOKEN}` },
+      });
+      const result = await response.data;
+      const productsList = await result.records;
+      setProducts(productsList);
+    }
+    getProductsList();
+  }, [ProductsList]);
+
+  async function filterCategoriesHandler(category) {
+    const res = await axios.get(
+      `${BASE_URL}/api/records/products/?searchKey=category&searchValue=${category}`,
+      {
+        headers: { api_key: API_KEY, Authorization: `Bearer ${ACCESS_TOKEN}` },
+      }
+    );
+    console.log(res);
   }
-  getProductsList();
 
   return (
     <div className="w-full p-6 flex flex-col items-center">
@@ -51,7 +63,9 @@ function ProductsList() {
             <div className="pl__dot"></div>
             <div className="pl__dot"></div>
             <div className="pl__dot"></div>
-            <div className="pl__text text-black font-bold text-2xl">صبر کنید...</div>
+            <div className="pl__text text-black font-bold text-2xl">
+              صبر کنید...
+            </div>
           </div>
         ) : (
           currentProducts.map((product: any) => {

@@ -89,11 +89,11 @@ export const teamMembers = [
   { name: "مریم حیدری", job: "مدیر عملیات", image: teamMember1 },
 ];
 
-export const sortFilters = [
-  { name: "جدیدترین", id: 1 },
-  { name: "قدیمی ترین", id: 2 },
-  { name: "ارزان ترین", id: 3 },
-  { name: "گران ترین", id: 4 },
+export const categoriesFilters = [
+  { name: "گیاهی", id: 1 },
+  { name: "ارگانیک", id: 2 },
+  { name: "میوه", id: 3 },
+  { name: "آب میوه", id: 4 },
 ];
 
 export const socialMediaArr = [
