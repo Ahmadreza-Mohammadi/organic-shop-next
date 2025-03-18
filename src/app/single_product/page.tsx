@@ -26,32 +26,21 @@ const SingleProduct = () => {
   const [relatedProducts, setRelatedProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    async function fetchProductDetails() {
+    async function fetchAllProducts() {
       try {
-        const response = await axios.get(`${BASE_URL}/api/records/product/${productId}`, {
+        const response = await axios.get(`${BASE_URL}/api/records/products`, {
           headers: { api_key: API_KEY, Authorization: `Bearer ${ACCESS_TOKEN}` },
         });
-        setProduct(response.data);
+        const fetchedProduct = response.data.records.find((p: Product) => p.id.toString() === productId);
+        setProduct(fetchedProduct);
+        setRelatedProducts(response.data.records.slice(0, 3));
       } catch (error) {
-        console.error("Failed to fetch product details:", error);
+        console.error("Failed to fetch products:", error);
       }
     }
 
-    async function fetchRelatedProducts() {
-      if (product) {
-        const response = await axios.get(
-          `${BASE_URL}/api/records/products?category=${product.category}`,
-          {
-            headers: { api_key: API_KEY, Authorization: `Bearer ${ACCESS_TOKEN}` },
-          }
-        );
-        setRelatedProducts(response.data.records);
-      }
-    } 
-
-    if (productId) fetchProductDetails();
-    if (product) fetchRelatedProducts();
-  }, [productId, product]);
+    if (productId) fetchAllProducts();
+  }, [productId]);
 
   if (!product) {
     return (

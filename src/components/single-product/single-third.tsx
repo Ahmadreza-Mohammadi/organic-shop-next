@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import React from "react";
 
 interface Product {
   id: number;
@@ -30,13 +30,10 @@ const BottomSingle: React.FC<{ relatedProducts: Product[] }> = ({ relatedProduct
               className="border border-gray-200 rounded-lg p-4 relative flex flex-col items-center shadow-lg hover:shadow-xl transition-shadow duration-200"
             >
               <div className="w-full h-48 overflow-hidden rounded-lg mb-4">
-                <Image
-                  src={product.imageUrl || "https://via.placeholder.com/150"}
+                <img
+                  src={product.imageUrl || "/placeholder.jpg"}
                   alt={product.name}
-                  width={320}
-                  height={240}
-                  layout="responsive"
-                  className="object-cover"
+                  className="object-cover w-full h-full"
                 />
               </div>
               <h3 className="font-medium text-lg text-center">{product.name}</h3>
