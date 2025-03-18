@@ -1,4 +1,6 @@
-import Image from "next/image";
+
+
+ import Image from "next/image";
 
 import Category_1 from "@/assets/images/Categories/image 1 (1).png";
 import Category_2 from "@/assets/images/Categories/image 1.png";
@@ -122,3 +124,6 @@ export default function Categories() {
     </div>
   );
 }
+
+
+
