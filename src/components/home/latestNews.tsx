@@ -23,7 +23,8 @@ export default function LatestNews() {
 
           <div className="border-2 border-gray-300 rounded-br-lg rounded-bl-lg p-4">
             <h3 className="text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quo?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+              quo?
             </h3>
             <div className="flex flex-col mt-3">
               <button className="flex flex-row-reverse items-center text-[#00B207] gap-2 hover:scale-105 hover:font-bold transition-all duration-400 ease-in-out">
@@ -32,7 +33,6 @@ export default function LatestNews() {
               </button>
             </div>
           </div>
-
         </div>
         <div className="rounded-lg w-[400px] overflow-visible">
           <Image
@@ -45,7 +45,8 @@ export default function LatestNews() {
 
           <div className="border-2 border-gray-300 rounded-br-lg rounded-bl-lg p-4">
             <h3 className="text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quo?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+              quo?
             </h3>
             <div className="flex flex-col mt-3">
               <button className="flex flex-row-reverse items-center text-[#00B207] gap-2 hover:scale-105 hover:font-bold transition-all duration-400 ease-in-out">
@@ -54,7 +55,6 @@ export default function LatestNews() {
               </button>
             </div>
           </div>
-
         </div>
         <div className="rounded-lg w-[400px] overflow-visible">
           <Image
@@ -67,7 +67,8 @@ export default function LatestNews() {
 
           <div className="border-2 border-gray-300 rounded-br-lg rounded-bl-lg p-4">
             <h3 className="text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quo?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+              quo?
             </h3>
             <div className="flex flex-col mt-3">
               <button className="flex flex-row-reverse items-center text-[#00B207] gap-2 hover:scale-105 hover:font-bold transition-all duration-400 ease-in-out">
@@ -76,11 +77,8 @@ export default function LatestNews() {
               </button>
             </div>
           </div>
-
         </div>
       </div>
-      
-      
     </div>
   );
 }
