@@ -47,7 +47,7 @@ const SingleProduct = () => {
         );
         setRelatedProducts(response.data.records);
       }
-    }
+    } 
 
     if (productId) fetchProductDetails();
     if (product) fetchRelatedProducts();
