@@ -1,4 +1,6 @@
-import Image from "next/image";
+
+
+ import Image from "next/image";
 
 import Category_1 from "@/assets/images/Categories/image 1 (1).png";
 import Category_2 from "@/assets/images/Categories/image 1.png";
@@ -25,7 +27,7 @@ export default function Categories() {
         <div
           className="flex flex-col justify-center border-2 border-gray-300 w-[200px] h-[213px] rounded-lg gap-5 
             hover:border-2 hover:border-[#00B207] hover:shadow-lg hover:scale-105 hover:font-bold 
-            transition-all duration-300 ease-in-out"
+            transition-all duration-300 ease-in-out "
         >
           <Image src={Category_1} alt="bannargreen" width={200} height={213} />
           <h3 className="text-center">میوه تازه</h3>
@@ -33,7 +35,7 @@ export default function Categories() {
         <div
           className="flex flex-col justify-center border-2 border-gray-300 w-[200px] h-[213px] rounded-lg gap-5 
          hover:border-2 hover:border-[#00B207] hover:shadow-lg hover:scale-105 hover:font-bold 
-          transition-all duration-300 ease-in-out"
+          transition-all duration-300 ease-in-out "
         >
           <Image src={Category_2} alt="bannargreen" width={200} height={213} />
           <h3 className="text-center">سبزیجات تازه</h3>
@@ -41,7 +43,7 @@ export default function Categories() {
         <div
           className="flex flex-col justify-center border-2 border-gray-300 w-[200px] h-[213px] rounded-lg gap-5 
         hover:border-2 hover:border-[#00B207] hover:shadow-lg hover:scale-105 hover:font-bold 
-        transition-all duration-300 ease-in-out"
+        transition-all duration-300 ease-in-out "
         >
           <Image src={Category_3} alt="bannargreen" width={200} height={213} />
           <h3 className="text-center">گوشت و ماهی</h3>
@@ -49,7 +51,7 @@ export default function Categories() {
         <div
           className="flex flex-col justify-center border-2 border-gray-300 w-[200px] h-[213px] rounded-lg gap-5 
           hover:border-2 hover:border-[#00B207] hover:shadow-lg hover:scale-105 hover:font-bold 
-          transition-all duration-300 ease-in-out"
+          transition-all duration-300 ease-in-out "
         >
           <Image src={Category_4} alt="bannargreen" width={200} height={213} />
           <h3 className="text-center">تنقلات</h3>
@@ -57,7 +59,7 @@ export default function Categories() {
         <div
           className="flex flex-col justify-center border-2 border-gray-300 w-[200px] h-[213px] rounded-lg gap-5 
           hover:border-2 hover:border-[#00B207] hover:shadow-lg hover:scale-105 hover:font-bold 
-          transition-all duration-300 ease-in-out"
+          transition-all duration-300 ease-in-out "
         >
           <Image src={Category_5} alt="bannargreen" width={200} height={213} />
           <h3 className="text-center">نوشیدنی ها</h3>
@@ -65,7 +67,7 @@ export default function Categories() {
         <div
           className="flex flex-col justify-center border-2 border-gray-300 w-[200px] h-[213px] rounded-lg gap-5 
           hover:border-2 hover:border-[#00B207] hover:shadow-lg hover:scale-105 hover:font-bold 
-         transition-all duration-300 ease-in-out"
+         transition-all duration-300 ease-in-out "
         >
           <Image src={Category_6} alt="bannargreen" width={200} height={213} />
           <h3 className="text-center">زیبایی و سلامت</h3>
@@ -73,7 +75,7 @@ export default function Categories() {
         <div
           className="flex flex-col justify-center border-2 border-gray-300 w-[200px] h-[213px] rounded-lg gap-5 
           hover:border-2 hover:border-[#00B207] hover:shadow-lg hover:scale-105 hover:font-bold 
-          transition-all duration-300 ease-in-out"
+          transition-all duration-300 ease-in-out "
         >
           <Image src={Category_7} alt="bannargreen" width={200} height={213} />
           <h3 className="text-center"> نان</h3>
@@ -81,7 +83,7 @@ export default function Categories() {
         <div
           className="flex flex-col justify-center border-2 border-gray-300 w-[200px] h-[213px] rounded-lg gap-5 
           hover:border-2 hover:border-[#00B207] hover:shadow-lg hover:scale-105 hover:font-bold 
-          transition-all duration-300 ease-in-out"
+          transition-all duration-300 ease-in-out "
         >
           <Image src={Category_8} alt="bannargreen" width={200} height={213} />
           <h3 className="text-center"> نیازهای پخت</h3>
@@ -89,7 +91,7 @@ export default function Categories() {
         <div
           className="flex flex-col justify-center border-2 border-gray-300 w-[200px] h-[213px] rounded-lg gap-5 
           hover:border-2 hover:border-[#00B207] hover:shadow-lg hover:scale-105 hover:font-bold 
-          transition-all duration-300 ease-in-out"
+          transition-all duration-300 ease-in-out "
         >
           <Image src={Category_9} alt="bannargreen" width={200} height={213} />
           <h3 className="text-center"> آشپزی</h3>
@@ -97,7 +99,7 @@ export default function Categories() {
         <div
           className="flex flex-col justify-center border-2 border-gray-300 w-[200px] h-[213px] rounded-lg gap-5 
           hover:border-2 hover:border-[#00B207] hover:shadow-lg hover:scale-105 hover:font-bold 
-          transition-all duration-300 ease-in-out"
+          transition-all duration-300 ease-in-out "
         >
           <Image src={Category_10} alt="bannargreen" width={200} height={213} />
           <h3 className="text-center"> غذای دیابتی</h3>
@@ -105,7 +107,7 @@ export default function Categories() {
         <div
           className="flex flex-col justify-center border-2 border-gray-300 w-[200px] h-[213px] rounded-lg gap-5 
           hover:border-2 hover:border-[#00B207] hover:shadow-lg hover:scale-105 hover:font-bold 
-          transition-all duration-300 ease-in-out"
+          transition-all duration-300 ease-in-out "
         >
           <Image src={Category_11} alt="bannargreen" width={200} height={213} />
           <h3 className="text-center"> مواد شوینده</h3>
@@ -113,7 +115,7 @@ export default function Categories() {
         <div
           className="flex flex-col justify-center border-2 border-gray-300 w-[200px] h-[213px] rounded-lg gap-5 
           hover:border-2 hover:border-[#00B207] hover:shadow-lg hover:scale-105 hover:font-bold 
-          transition-all duration-300 ease-in-out"
+          transition-all duration-300 ease-in-out "
         >
           <Image src={Category_12} alt="bannargreen" width={200} height={213} />
           <h3 className="text-center"> روغن</h3>
@@ -122,3 +124,6 @@ export default function Categories() {
     </div>
   );
 }
+
+
+

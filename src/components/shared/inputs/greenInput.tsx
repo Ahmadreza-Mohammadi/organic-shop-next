@@ -8,6 +8,7 @@ interface InputProps {
   value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   height?: string;
+  width?: string;
 }
 
 const GreenInput: React.FC<InputProps> = ({
@@ -16,6 +17,7 @@ const GreenInput: React.FC<InputProps> = ({
   value,
   onChange,
   height = "49px",
+  width = "450px",
 }) => {
   const [showPassword, setShowPassword] = useState(false);
   const togglePasswordVisibility = () => {
@@ -30,7 +32,7 @@ const GreenInput: React.FC<InputProps> = ({
         value={value}
         onChange={onChange}
         className="rounded-[6px] border border-gray-300 focus:border-green-500 focus:outline-none pr-10"
-        style={{ height }}
+        style={{ height, width }}
       />
       {type === "password" && (
         <EyeIcon

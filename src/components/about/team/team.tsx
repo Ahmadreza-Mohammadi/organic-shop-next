@@ -1,7 +1,7 @@
 "use client";
+import { teamMembers } from "@/components/constants/const";
 import ArrowLeft from "@/components/shared/buttons/arrows/arrowLeft";
 import ArrowRight from "@/components/shared/buttons/arrows/arrowRight";
-import { teamMembers } from "@/constants/const";
 import Image from "next/image";
 
 export default function Team() {

@@ -1,12 +1,32 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'tse2.mm.bing.net',
+        protocol: "https",
+        hostname: "hips.hearstapps.com",
+        pathname: "/hmg-prod/images/**",
+      },
+      {
+        protocol: "https",
+        hostname: "tse4.mm.bing.net",
+        pathname: "/th**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.lipmanfamilyfarms.com",
+        pathname: "/wp-content/uploads/**",
+      },
+      {
+        protocol: "https",
+        hostname: "tse1.mm.bing.net",
+        pathname: "/th**",
+      },
+      {
+        protocol: "https",
+        hostname: "tse2.mm.bing.net",
+        pathname: "/th**",
       },
     ],
   },

@@ -1,11 +1,12 @@
 "use client";
 
-import React from "react";
-import { navPages } from "../constants/const";
 import { useRouter } from "next/navigation";
+import { useSelector } from "react-redux";
+import { navPages } from "../constants/const";
 
 function Navbar() {
   const router = useRouter();
+  const productData = useSelector((state: any) => state.product);
 
   const handleNavigation = (path: string) => {
     router.push(path);
@@ -13,7 +14,7 @@ function Navbar() {
 
   return (
     <div className="w-full flex flex-col">
-      <div className="flex justify-between items-center w-full p-12 shadow bg-white border-2 ">
+      <div className=" flex justify-between items-center w-full p-12 shadow  border-2 ">
         <div className="flex items-center cursor-pointer clear-start p-1 rounded-md">
           <img
             className="h-24"
@@ -41,10 +42,11 @@ function Navbar() {
             جستجو
           </button>
         </div>
-        <div className="flex items-center gap-2 p-2 rounded-xl">
+        <div className="flex items-center gap-2 p-2 rounded-xl relative">
           <div className="flex gap-1">
-            <span>جمع کل:</span>
-            <span>۳۴۵۰۰۰ تومان</span>
+            <div className="bg-red-400 p-2 rounded-full w-8 h-8 text-white absolute top-3 translate-y-[-30%] items-center flex justify-center">
+              {productData.length}
+            </div>
           </div>
           <img
             className="h-16 cursor-pointer"
@@ -54,20 +56,23 @@ function Navbar() {
           />
         </div>
       </div>
-      <div className="bg-[#919090] flex justify-between">
-        <div className=" flex justify-around  text-xl font-semibold text-white">
+
+      <div className="navbar p-8 flex justify-between">
+        <div className=" flex justify-around  text-xl font-semibold text-white gap-2">
           {navPages.map((page) => (
-            <span
-              className="cursor-pointer hover:scale-105 hover:font-bold transition-all duration-400 ease-in-out  p-4"
+            <div
               key={page.id}
-              onClick={() => handleNavigation(page.path)}
+              className="cursor-pointer hover:text-green-200 p-2 flex items-center gap-1"
             >
-              {page.name}
-            </span>
+              <img className="h-6" src={page.logo} alt="organic shop" />
+              <span key={page.id} onClick={() => handleNavigation(page.path)}>
+                {page.name}
+              </span>
+            </div>
           ))}
         </div>
         <div
-          className="px-4 flex items-center gap-2 cursor-pointer text-white font-semibold hover:scale-105 hover:font-bold transition-all duration-300 ease-in-out"
+          className="px-4 flex items-center gap-2 cursor-pointer text-white font-semibold hover:text-green-200 "
           onClick={() => handleNavigation("/support")}
         >
           <span>پشتیبانی</span>
